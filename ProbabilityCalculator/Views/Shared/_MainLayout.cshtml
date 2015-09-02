@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>Probability Calculator 1.0</h1>
+        </div>
+        <div id="nav">
+            @{Html.RenderPartial("~/Views/Shared/_Nav.cshtml");}
+        </div>
+        <div id="main">
+            @RenderSection("main", required: false)
+        </div>
+        <div id="footer">
+            <p>&copy; 2015 - Tax Calculator Enterprises</p>
+        </div>
+</body>
+</html>

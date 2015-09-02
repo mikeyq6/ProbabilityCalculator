@@ -1,0 +1,150 @@
+﻿
+body,
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#202020;
+    font-family: 'Ubuntu', sans-serif;
+}
+#wrap {
+    width: 80vw;
+	max-width:950px;
+	margin:0 auto;
+	background:#99c;
+}
+#header {
+    padding:0;
+	background:#96c7c7;
+    margin-top: 20px;
+    height: 141px;
+}
+#header h1 {
+    display: inline-block;
+    float: left;
+    line-height: 141px;
+    padding-left: 20px;
+    color: rgb(19, 86, 86);
+    text-shadow: 2px 2px 4px rgba(125, 141, 150, 0.85);
+}
+#header #header-image {
+    background-image:url("/Images/calc.jpg");
+    width: 213px;
+    height: 141px;
+    display: inline-block;
+    float: right;
+}
+h1 {
+	margin:0;
+}
+a:link, a:visited, a:active {
+    color: #135656;
+}
+a:hover {
+    color: #498d8d;
+}
+#nav {
+	padding:5px 10px;
+	background:#498d8d;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#nav li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+    border: 1px solid #498d8d;
+    min-width: 150px;
+    height: 25px;
+    background-color: #135656;
+}
+#nav li.active, #nav li:hover {
+    background-color: #e2f4f4;
+}
+#nav li.active a:active, #nav li.active a:link, #nav li.active a:visited {
+    color: #135656;
+}
+#nav li a:active, #nav li a:link, #nav li a:visited {
+    color: #e2f4f4;
+    text-decoration: none;
+    padding: 2px 10px;
+    line-height: 25px;
+}
+#nav li:hover a {
+    color: #135656;
+}
+#main {
+	float:left;
+	width:100%;
+	padding:10px;
+	background:#fff;
+    box-sizing: border-box;
+    min-height: 60vh;
+}
+#main img.hero {
+    max-width: 30vw;
+    display: inline-block;
+    float: right;
+    padding: 0 20px;
+}
+h2 {
+	margin:0 0 1em;
+}
+#footer {
+	clear:both;
+	padding:10px 20px;
+	background:#96c7c7;
+}
+#footer p {
+	margin:0;
+}
+* html #footer {
+	height:1px;
+}
+
+table.figure-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table.figure-table th, table.figure-table td {
+    padding: 5px;
+    text-align: left;
+}
+table.figure-table th {
+    background-color: rgb(144, 107, 32);
+    color: rgb(255, 249, 237);
+}
+table.figure-table tr:nth-child(2n+1) td {
+    background-color: rgb(255, 249, 237);
+}
+table.figure-table tr:nth-child(2n) td {
+    background-color: rgb(255, 234, 192);
+}
+
+
+@media (max-device-width : 667px) {
+    #header {
+        height: auto;
+        display: inline-block;
+        margin-top: 0;
+        padding: 10px 0;
+    }
+    #header h1 {
+        height: auto;
+        line-height: 40px;
+    }
+    #nav {
+        height: auto;
+        text-align: center;
+    }
+    #nav li {
+        width: 90%;
+        max-width: 90%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
